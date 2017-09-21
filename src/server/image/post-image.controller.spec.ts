@@ -44,13 +44,13 @@ describe('postImage controller', () => {
   const url = 'https://some/url';
   const userID = testUser._id;
 
-  it('should post an image', done => {
+  it('should post an image', (done) => {
     const spy = spyOn(request, 'get').and.callFake(requestSuccess);
     const now = Date.now();
     const url = 'https://some/url';
 
     postImage({ url, userID })
-      .then(image => {
+      .then((image) => {
         expect(spy).toHaveBeenCalled();
         expect(image.url).toEqual(url);
         expect(image.owner.toString()).toEqual(testUser._id);
@@ -63,22 +63,22 @@ describe('postImage controller', () => {
       .then(done, done.fail);
   });
 
-  it('should reject if error in requesting image', done => {
+  it('should reject if error in requesting image', (done) => {
     spyOn(request, 'get').and.callFake(requestError);
     postImage({ url, userID }).then(done.fail, done);
   });
 
-  it('should reject if url is invalid', done => {
+  it('should reject if url is invalid', (done) => {
     spyOn(request, 'get').and.callFake(request404);
     postImage({ userID, url }).then(done.fail, done);
   });
 
-  it('should reject if request timeout', done => {
+  it('should reject if request timeout', (done) => {
     spyOn(request, 'get').and.callFake(requestTimeout);
     postImage({ userID, url }).then(done.fail, done);
   }, 100000);
 
-  it('should reject if url is not image', done => {
+  it('should reject if url is not image', (done) => {
     spyOn(request, 'get').and.callFake(requestText);
     postImage({ userID, url }).then(done.fail, done);
   });

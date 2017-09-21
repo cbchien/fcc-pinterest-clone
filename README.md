@@ -1,8 +1,8 @@
 # fcc-pinterest-clone
 
 *IN PROGRESS*  
-   
-  
+
+
 FCC B2L Exercise
 Code concept based on [ksmai's](https://github.com/ksmai/pinterest-clone/) project.
 
