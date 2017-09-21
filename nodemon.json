@@ -1,0 +1,8 @@
+{
+	"restartable": "rs",
+	"colours": true,
+	"verbose": true,
+	"ext": "ts js",
+	"watch": "./src/server",
+	"ignore": "*.spec.*"
+}
