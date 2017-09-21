@@ -1,11 +1,13 @@
 # fcc-pinterest-clone
+
+*IN PROGRESS*  
+   
+  
 FCC B2L Exercise
-Code concept based on [ksmai](https://github.com/ksmai/pinterest-clone/)
+Code concept based on [ksmai's](https://github.com/ksmai/pinterest-clone/) project.
 
 A web application for users to view, post and star images. 
-Built with MEAN technologies.
-
-*IN PROGRESS*
+Built with MEAN technologies.  
 
 [Hammer.JS](http://hammerjs.github.io/) for touch gestures.  
 [Masonry](https://masonry.desandro.com/) for cascading grid layout.  
