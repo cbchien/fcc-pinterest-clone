@@ -38,4 +38,4 @@ export class StorageService {
 
     window.localStorage.setItem(key, stringified);
   }
-}
+} 
