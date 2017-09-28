@@ -1,4 +1,4 @@
-$primary-palette: mat-palette($mat-blue);
-$secondary-palette: mat-palette($mat-green, A200, A100, A400);
+$primary-palette: mat-palette($mat-teal);
+$secondary-palette: mat-palette($mat-brown, A200, A100, A400);
 $light-theme: mat-light-theme($primary-palette, $secondary-palette);
 $dark-theme: mat-dark-theme($primary-palette, $secondary-palette);
