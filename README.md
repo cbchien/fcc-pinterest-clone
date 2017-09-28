@@ -1,6 +1,5 @@
 # fcc-pinterest-clone 
 [![Build Status](https://travis-ci.org/cbchien/fcc-pinterest-clone.svg?branch=master)](https://travis-ci.org/cbchien/fcc-pinterest-clone)
-test build status
 
 *IN PROGRESS*  
 
