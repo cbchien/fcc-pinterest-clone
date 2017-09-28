@@ -1,0 +1,47 @@
+<div
+  infiniteScroll
+  [infiniteScrollDistance]="2"
+  [infiniteScrollThrottle]="300"
+  (scrolled)="loadMore()"
+  [masonryLayout]="250"
+  [masonryLength]="images.length"
+  class="masonry-gird"
+  #masonry="masonryLayout"
+>
+  <md-card *ngFor="let image of images" class="masonry-item">
+    <img
+      md-card-image
+      [src]="image.url"
+      [alt]="image.description"
+      (error)="showPlaceholder(image)"
+    >
+
+    <md-card-subtitle>{{image.description}}</md-card-subtitle>
+
+    <md-card-content>
+      <md-nav-list>
+        <a
+          md-list-item
+          [href]="'https://twitter.com/intent/user?user_id=' +
+            image.owner.twitterID"
+          target="_new"
+        >
+          <img
+            md-list-avatar
+            [src]="image.owner.picture"
+            [alt]="'Avatar of ' + image.owner.name"
+          >
+          <span
+            md-line
+          >@{{image.owner.name}}</span>
+        </a>
+      </md-nav-list>
+    </md-card-content>
+
+    <md-card-actions>
+      <button md-button (click)="like(image)" [disabled]="!canVote(image)">
+        <md-icon>star_rate</md-icon> {{image.likers.length}}
+      </button>
+    </md-card-actions>
+  </md-card>
+</div>

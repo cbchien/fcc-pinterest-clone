@@ -1,0 +1,19 @@
+md-card {
+  width: 250px;
+  margin: 15px;
+}
+
+md-input-container,
+input,
+textarea {
+  width: 100%;
+}
+
+md-progress-spinner {
+  display: inline-block;
+  height: 36px;
+}
+
+textarea {
+  resize: none;
+}

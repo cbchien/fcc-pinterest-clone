@@ -19,7 +19,7 @@ import { errorHandler } from './helpers/error-handler';
 
 const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost:27017/pinterest';
 mongoose
-  .connect(MONGO_URL, { useMongoClient: true })
+  .connect(MONGO_URL)
   .then(() => {
     console.log(`Connected to mongoDB at ${MONGO_URL}`);
   })
