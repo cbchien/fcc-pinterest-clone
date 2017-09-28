@@ -1,4 +1,4 @@
-# fcc-pinterest-clone 
+# fcc-pinterest-clone [Demo](https://cbc-pinterest-clone.herokuapp.com/)
 [![Build Status](https://travis-ci.org/cbchien/fcc-pinterest-clone.svg?branch=master)](https://travis-ci.org/cbchien/fcc-pinterest-clone)
 
 *IN PROGRESS*  
